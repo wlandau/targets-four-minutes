@@ -1,11 +1,8 @@
 # Get started with `targets` in 4 minutes
 
-The [`targets`](https://docs.ropensci.org/targets/) R package is a pipeline tool for reproducible computation in statistics and data science. This short example is the one from the 4-minute video on getting started with [`targets`](https://docs.ropensci.org/targets/):
+[![cloud](https://img.shields.io/badge/RStudio-Cloud-blue)](https://rstudio.cloud/project/3946303)
 
-## Get started in 4 minutes
-
-The following 4-minute video demonstrates the example pipeline used in
-the [walkthrough](https://books.ropensci.org/targets/walkthrough.html)
+The [`targets`](https://docs.ropensci.org/targets/) R package is a pipeline tool for reproducible computation in statistics and data science. This short example is the one from the 4-minute video on getting started with [`targets`](https://docs.ropensci.org/targets/). It also comes up in the [walkthrough](https://books.ropensci.org/targets/walkthrough.html)
 and [functions](https://books.ropensci.org/targets/functions.html)
 chapters of the [user manual](https://books.ropensci.org/targets/).
 
@@ -13,7 +10,7 @@ chapters of the [user manual](https://books.ropensci.org/targets/).
 
 ## Try it out
 
-Visit 
+Visit <https://rstudio.cloud/project/3946303> to try out the code in a web browser. No download or installation required.
 
 ## Files
 
