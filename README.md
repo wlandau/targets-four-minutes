@@ -11,6 +11,10 @@ chapters of the [user manual](https://books.ropensci.org/targets/).
 
 [![](./images/video.png)](https://vimeo.com/700982360)
 
+## Try it out
+
+Visit 
+
 ## Files
 
 * `data.csv`: the `airquality` dataset from the `datasets` package.
@@ -19,7 +23,7 @@ chapters of the [user manual](https://books.ropensci.org/targets/).
 
 ## Usage
 
-1. `install.packages("targets")` to install the package
+1. `install.packages("targets")` to install the package.
 1. [`tar_manifest()`](https://docs.ropensci.org/targets/reference/tar_manifest.html) and [`tar_visnetwork()`](https://docs.ropensci.org/targets/reference/tar_visnetwork.html) to check the pipeline for correctness.
 1. [`tar_make()`](https://docs.ropensci.org/targets/reference/tar_make.html) or [similar](https://docs.ropensci.org/targets/reference/index.html#pipeline) to run the pipeline.
 1. [`tar_read()`](https://docs.ropensci.org/targets/reference/tar_read.html) to read target output.

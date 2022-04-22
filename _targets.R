@@ -9,7 +9,7 @@ library(targets)
 
 # Set target options:
 tar_option_set(
-  packages = c("tibble", "readr", "dplyr", "ggplot2"), # packages that your targets need to run
+  packages = c("dplyr", "ggplot2", "readr"), # packages that your targets need to run
   format = "rds" # default storage format
   # Set other options as needed.
 )
