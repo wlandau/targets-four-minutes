@@ -9,7 +9,7 @@ library(targets)
 
 # Set target options:
 tar_option_set(
-  packages = c("dplyr", "ggplot2", "readr") # packages that your targets use
+  packages = c("dplyr", "ggplot2", "readr") # Packages that your targets use.
   # format = "qs", # Optionally set the default storage format. qs is fast.
   #
   # Pipelines that take a long time to run may benefit from
@@ -22,11 +22,16 @@ tar_option_set(
   #   controller = crew::crew_controller_local(workers = 2)
   #
   # Alternatively, if you want workers to run on a high-performance computing
-  # cluster, select a controller from the {crew.cluster} package. The following
-  # example is a controller for Sun Grid Engine (SGE).
+  # cluster, select a controller from the {crew.cluster} package.
+  # For the cloud, see plugin packages like {crew.aws.batch}.
+  # The following example is a controller for Sun Grid Engine (SGE).
   # 
   #   controller = crew.cluster::crew_controller_sge(
-  #     workers = 50,
+  #     # Number of workers that the pipeline can scale up to:
+  #     workers = 10,
+  #     # It is recommended to set an idle time so workers can shut themselves
+  #     # down if they are not running tasks.
+  #     seconds_idle = 120,
   #     # Many clusters install R as an environment module, and you can load it
   #     # with the script_lines argument. To select a specific verison of R,
   #     # you may need to include a version string, e.g. "module load R/4.3.0".
@@ -34,12 +39,12 @@ tar_option_set(
   #     script_lines = "module load R"
   #   )
   #
-  # Set other tar_option_set() options as needed.
+  # Set other options as needed.
 )
 
 # Run the R scripts in the R/ folder with your custom functions:
 tar_source()
-# source("other_functions.R") # Source other scripts as needed.
+# tar_source("other_functions.R") # Source other scripts as needed.
 
 # Replace the target list below with your own:
 list(
