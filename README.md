@@ -20,7 +20,7 @@ Visit <https://rstudio.cloud/project/3946303> to try out the code in a web brows
 
 ## Usage
 
-1. `install.packages("targets")` to install the package.
+1. `library(targets)` to load the package.
 1. [`tar_manifest()`](https://docs.ropensci.org/targets/reference/tar_manifest.html) and [`tar_visnetwork()`](https://docs.ropensci.org/targets/reference/tar_visnetwork.html) to check the pipeline for correctness.
 1. [`tar_make()`](https://docs.ropensci.org/targets/reference/tar_make.html) or [similar](https://docs.ropensci.org/targets/reference/index.html#pipeline) to run the pipeline.
 1. [`tar_read()`](https://docs.ropensci.org/targets/reference/tar_read.html) to read target output.
